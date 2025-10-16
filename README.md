@@ -26,5 +26,3 @@ It provides intelligent and human-like conversational responses directly from yo
 
 ---
 
-## 📁 Project Structure
-
