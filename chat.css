@@ -1,0 +1,136 @@
+/* Common code for body*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* For dark mode */
+  body.dark-theme {
+    background: linear-gradient(135deg, hsl(0, 0%, 0%), rgb(21, 103, 255));
+    color: white;
+  }
+
+  /* For light mode */
+  body.light-theme {
+    background: white;
+    color: black;
+  }
+  
+
+  .chat-container {
+    margin: auto;
+    width: 285%;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Send message style */
+  .messages-container {
+    flex: 20;
+    overflow-y: auto;
+    padding: 1rem;
+  }
+  
+  /* heading of Chat bot */
+  .chat-header {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* When user sends a message */
+  .message {
+    max-width: fit-content;
+    padding: 0.75rem;
+    border-radius: 10px;
+    word-wrap: break-word;
+  }
+  
+  /*User Message*/
+  .message.user {
+    background-color: black;
+    color: whitesmoke;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  
+  /*Assistant Message Style */
+  .message.assistant {
+    align-self: flex-start;
+    background-color: #e5e7eb;
+    color: black;
+    margin-top: 20px;
+  }
+  
+  /* Message Send Style */
+  .chat-form {
+    display: flex;
+    align-items: flex-end;
+    padding: 0.5rem;
+    background-color: #222;
+    border-top: 2px solid #6cff9d;
+    box-shadow: 0 14px 15px rgba(72, 255, 0, 0.8);
+    border-radius: 10px;
+  }
+  
+  /* Text area style */
+  .chat-textarea {
+    flex: 1;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  /* Send button style */
+  .send-button,
+  #image-gen-btn {
+    background: #3b82f6;
+    border: none;
+    color: whitesmoke;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+  
+  /* Send button hover effect */
+  .send-button:hover,
+  #image-gen-btn:hover {
+    background: #2563eb;
+  }
+
+  
+  
+  /* light mode and dark mode button */
+  #theme-toggle {
+    background: hsl(198, 60%, 50%);
+    border: none;
+    color: hsl(192, 91%, 55%);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /* light mode and dark mode button hover effect */
+  #theme-toggle:hover {
+    background: #2563eb;
+  }
+  
+  /* bot typing indicator */
+  #typing-indicator img {
+    animation: bounce 1s infinite ease-in-out;
+    margin-top: 1rem;
+  }
+  
+  /* Typing indicator style */
+  @keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+  }
+  

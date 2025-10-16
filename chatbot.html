@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chatbot</title>
+  <link rel="stylesheet" href="chat.css">
+  <style>
+    h1 {
+      background: linear-gradient(45deg, #a855f7, #ec4899);
+      background-clip: text;
+      color: transparent;
+    }
+  .send,
+  #image-gen-btn {
+    background: #3b82f6;
+    border: none;
+    color: whitesmoke;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+  
+  /* Send button hover effect */
+  .send:hover,
+  #image-gen-btn:hover {
+    background: #2563eb;
+  }
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+    <main class="chat-container">
+      <div class="messages-container">
+        <header class="chat-header">
+          <h1>VDSP-CHATBOT</h1>
+          <p>Chat with an AI assistant or generate an image!</p>
+          <button id="theme-toggle">Toggle Theme</button>
+        </header>
+
+        <div class="message-list"></div>
+
+        <!-- Loader Image when typing -->
+        <div id="typing-indicator" style="display: none; text-align: left;">
+          <img src="loading.webp" alt="Typing..." style="height: 50px; margin-right: 80px ;">
+        </div>
+
+      </div>
+      <!-- Send Button -->
+      <form class="chat-form">
+        <textarea class="chat-textarea" placeholder="Enter a message..." rows="1"></textarea>
+        <button type="submit" class="send-button">Send</button>
+        
+          
+      </form>
+    </main>
+  </div>
+  <script src="chat.js"></script>
+</body>
+</html>

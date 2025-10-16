@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI CHATBOT</title>
+  <link rel="stylesheet" href="style.css" /> <!-- Link of CSS file -->
+</script>
+  <style>
+    p{
+      text-align: center;
+      margin-left: 33%;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar  -->
+  <nav class="navbar">
+    <div class="logo">VDSP CHABOT</div>
+    <div class="nav-links">
+      <a href="#about" data-section="about">About</a>
+      <a href="#login" data-section="login">LogIn</a>
+      <a href="#signup" data-section="signup">SignUp</a>
+    </div>
+  </nav>
+
+  <!-- Hero section shown by default -->
+  <div class="hero active" id="hero">
+    <h1>Welcome To <span class="gradient-text">VDSP Chat bot</span></h1>
+    <h3> Most Advanced CHATBOT That Can Give Real-Life Solutions.</h3>
+    <div class="cta-buttons">
+      
+      <!-- Note: Changing targets for the two buttons -->
+      <button class="button primary" ><a style=" color: black; text-decoration: none; "  href="chatbot.html" onclick="showSection('aiChat')">Text with AI </a></button>
+      
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="section" id="about">
+    <h2>About Us</h2>
+    <p >
+      Welcome to VDSP Chatbot – an intelligent and responsive AI assistant designed to make conversations smarter, smoother, and more interactive!
+
+Who We Are
+VDSP Coder is a team of passionate developers who believe in the power of AI-driven technology to enhance user experience. Our chatbot is built to assist, generate creative responses, and provide an engaging chat interface for users worldwide.
+
+
+    </p>
+    <button class="button secondary" onclick="showSection('hero')">Back to Home</button>
+  </div>
+
+  <!-- Login Section -->
+  <div class="section" id="login">
+    <h2>Login</h2>
+    <div class="form-box">
+      <form>
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" name="login-email" required />
+
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="login-password" required />
+
+        <div class="form-buttons">
+          <button type="submit" class="button primary">Log In</button>
+          <button type="button" class="button secondary" onclick="showSection('hero')">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- SignUp Section -->
+  <div class="section" id="signup">
+    <h2>Sign Up</h2>
+    <div class="form-box">
+      <form id="signupForm" onsubmit="handleSignup(event)">
+        hrefhttps://varad-gotkhindikar.app.n8n.cloud/form-test/ea92963a-8074-4f2d-8caf-f5ae4de2b920
+
+          <button type="button" class="button secondary" onclick="showSection('hero')">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  </div>
+  <div id="particles-js"></div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- background Particles animation link -->
+  <script src="script.js"></script> <!-- Link Of HTML and JAVASCRIPT -->
+  
+</body>
+</html>
+
