@@ -71,17 +71,31 @@ VDSP Coder is a team of passionate developers who believe in the power of AI-dri
   </div>
 
   <!-- SignUp Section -->
-  <div class="section" id="signup">
-    <h2>Sign Up</h2>
-    <div class="form-box">
-      <form id="signupForm" onsubmit="handleSignup(event)">
-        hrefhttps://varad-gotkhindikar.app.n8n.cloud/form-test/ea92963a-8074-4f2d-8caf-f5ae4de2b920
+<!-- Sign Up Section -->
+<div class="section" id="signup">
+  <h2>Sign Up</h2>
+  <div class="form-box">
+    <form id="signupForm" onsubmit="handleSignup(event)">
+      <label for="signup-name">Full Name:</label>
+      <input type="text" id="signup-name" name="signup-name" placeholder="Enter your full name" required>
 
-          <button type="button" class="button secondary" onclick="showSection('hero')">Cancel</button>
-        </div>
-      </form>
-    </div>
+      <label for="signup-email">Email:</label>
+      <input type="email" id="signup-email" name="signup-email" placeholder="Enter your email" required>
+
+      <label for="signup-password">Password:</label>
+      <input type="password" id="signup-password" name="signup-password" placeholder="Create a password" required>
+
+      <label for="signup-confirm-password">Confirm Password:</label>
+      <input type="password" id="signup-confirm-password" name="signup-confirm-password" placeholder="Re-enter password" required>
+
+      <div class="form-buttons">
+        <button type="submit" class="button primary">Sign Up</button>
+        <button type="button" class="button secondary" onclick="showSection('hero')">Cancel</button>
+      </div>
+    </form>
   </div>
+</div>
+
 
   </div>
   <div id="particles-js"></div>
@@ -90,4 +104,5 @@ VDSP Coder is a team of passionate developers who believe in the power of AI-dri
   
 </body>
 </html>
+
 
