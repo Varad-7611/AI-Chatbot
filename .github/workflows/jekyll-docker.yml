@@ -1,4 +1,4 @@
-name: Chatbot Website Deploy
+name: Deploy Chatbot Website
 
 on:
   push:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout code
+      # Step 1: Checkout your repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -21,11 +21,11 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-north-1
 
-      # Step 3: Inject API key into JS file (optional)
-      - name: Add API key to JS file
+      # Step 3: Inject your API key into chat.js
+      - name: Add API key to chat.js
         run: |
-          sed -i "s|YOUR_API_KEY|${{ secrets.API_KEY }}|g" script.js
+          sed -i "s|YOUR_API_KEY|${{ secrets.API_KEY }}|g" chat.js
 
-      # Step 4: Deploy to S3
+      # Step 4: Deploy all files to S3
       - name: Deploy static files to S3
-        run: aws s3 sync . s3://chatbot-website-bucket --delete
+        run: aws s3 sync . s3://your-chatbot-bucket-name --delete
