@@ -28,4 +28,4 @@ jobs:
 
       # Step 4: Deploy all files to S3
       - name: Deploy static files to S3
-        run: aws s3 sync . s3://your-chatbot-bucket-name --delete
+        run: aws s3 sync . s3://demo-aichatbot-using-s3 --delete
