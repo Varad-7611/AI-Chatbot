@@ -1,28 +1,31 @@
-# 💬 AI Chatbot using Google Gemini API
+# 🤖 AI Chatbot Website (HTML, CSS, JS + Gemini API)
 
-This is a simple yet powerful **AI Chatbot** built using **HTML, CSS, and JavaScript**, powered by the **Google Gemini API**.  
-It provides intelligent and human-like conversational responses directly from your browser — no backend required!
+Welcome to **VDSP AI Chatbot**, a fully functional conversational bot built using **HTML**, **CSS**, and **JavaScript**, powered by **Google Gemini API** and deployed automatically to **AWS S3** using **GitHub Actions (CI/CD)**.
+
+🌍 **Live Demo:**  
+👉 [http://demo-aichatbot-using-s3.s3-website.eu-north-1.amazonaws.com](http://demo-aichatbot-using-s3.s3-website.eu-north-1.amazonaws.com)
 
 ---
 
 ## 🚀 Features
-
-- 🧠 **Powered by Google Gemini API** for advanced, natural language understanding.  
-- 💻 **Frontend-only project** — built using pure **HTML, CSS, and JavaScript**.  
-- 🗨️ **Smooth Chat Interface** — clean and modern UI with a typing animation.  
-- 🌙 **Light/Dark Mode Support** *(optional)*.  
-- ⚡ **Fast Response** — communicates directly with the Gemini API via your API key.
-
----
-
-## 🧩 Tech Stack
-
-| Technology | Description |
-|-------------|-------------|
-| **HTML5** | Structure of the chatbot |
-| **CSS3** | Styling and responsive design |
-| **JavaScript (ES6)** | Handles API requests and chat functionality |
-| **Google Gemini API** | Provides AI-powered responses |
+- 💬 Real-time AI chat using **Gemini API**
+- 🌙 Light/Dark mode toggle
+- 🎨 Animated modern UI
+- ☁️ Fully automated deployment to **AWS S3**
+- 🔐 API Key stored securely in **GitHub Secrets**
+- ⚙️ Continuous Deployment using **GitHub Actions**
 
 ---
 
+## 🏗️ Tech Stack
+| Technology | Purpose |
+|-------------|----------|
+| **HTML5 / CSS3** | Frontend structure & styling |
+| **JavaScript (Vanilla JS)** | Chat logic & API integration |
+| **Gemini API** | AI-powered responses |
+| **AWS S3** | Static website hosting |
+| **GitHub Actions** | CI/CD pipeline for automatic deployment |
+
+---
+
+## 📦 Folder Structure
