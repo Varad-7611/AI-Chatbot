@@ -28,4 +28,3 @@ Welcome to **VDSP AI Chatbot**, a fully functional conversational bot built usin
 
 ---
 
-## 📦 Folder Structure
