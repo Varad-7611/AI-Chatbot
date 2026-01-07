@@ -48,7 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // API call to get AI response
     async function fetchAIResponse(userMessage) {
-      const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=YOUR_API_KEY";
+        const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=YOUR_API_KEY";
+      
   
       const requestBody = {
         contents: [{ parts: [{ text: userMessage }] }]
@@ -93,3 +94,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   
+
