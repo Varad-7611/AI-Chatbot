@@ -16,7 +16,6 @@ Welcome to **VDSP AI Chatbot**, a fully functional conversational bot built usin
 - ⚙️ Continuous Deployment using **GitHub Actions**
 
 ---
-
 ## 🏗️ Tech Stack
 | Technology | Purpose |
 |-------------|----------|
