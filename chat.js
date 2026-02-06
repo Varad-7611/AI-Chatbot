@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const body = document.body;
   
     // Load saved theme
+    
     const currentTheme = localStorage.getItem("theme") || "dark-theme";
     body.classList.add(currentTheme);
     themeToggle.textContent = currentTheme === "dark-theme" ? "🌙 Dark Mode" : " 🌞Light Mode";
@@ -94,5 +95,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   
+
 
 
